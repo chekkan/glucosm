@@ -1,0 +1,27 @@
+@using Microsoft.AspNetCore.Localization
+@using Microsoft.AspNetCore.Mvc.Localization
+@using Glucosm.Web
+
+@inject IViewLocalizer Localizer
+@inject IHtmlLocalizer<SharedResource> SharedLocalizer
+
+<h2 class="text-center">@SharedLocalizer["Sign up"]</h2>
+
+<div class="container-sm">
+    <form asp-route="register" method="post">
+        <div class="mb-3">
+            <label for="emailAddress" class="form-label">@SharedLocalizer["Email address"]</label>
+            <input type="email" class="form-control" id="emailAddress" aria-describedby="emailHelp">
+            <div id="emailHelp" class="form-text">@Localizer["We'll never share your email with anyone else."]</div>
+        </div>
+        <div class="mb-3">
+            <label for="password" class="form-label">@SharedLocalizer["Password"]</label>
+            <input type="password" class="form-control" id="password">
+        </div>
+        <div class="mb-3">
+            <label for="confirm-password" class="form-label">@SharedLocalizer["Confirm Password"]</label>
+            <input type="password" class="form-control" id="confirm-password">
+        </div>
+        <button type="submit" class="btn btn-primary">@SharedLocalizer["Sign up"]</button>
+    </form>
+</div>

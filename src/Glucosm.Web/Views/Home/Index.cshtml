@@ -1,1 +1,6 @@
-<h2 class="text-center">Coming Soon!</h2>
+@using Microsoft.AspNetCore.Mvc.Localization
+@using Glucosm.Web
+
+@inject IHtmlLocalizer<SharedResource> SharedLocalizer
+
+<h2 class="text-center">@SharedLocalizer["Coming Soon!"]</h2>
