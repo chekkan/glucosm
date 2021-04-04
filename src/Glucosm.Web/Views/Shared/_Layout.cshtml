@@ -15,26 +15,7 @@
 
 <body>
 
-    <header class="py-3 mb-4 border-bottom">
-        <div class="container">
-            <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
-                <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-dark text-decoration-none">
-                    <i class="bi bi-bootstrap me-2" style="font-size:2.5em;"></i>
-                    <span class="fs-4">Glucosm</span>
-                </a>
-
-                <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
-                    @* <li><a href="/" class="nav-link active">Home</a></li> *@
-                </ul>
-
-                <div class="text-end">
-                    <button type="button" class="btn me-2">Login</button>
-                    <button type="button" class="btn btn-warning">Sign-up</button>
-                </div>
-            </div>
-        </div>
-    </header>
-
+    <partial name="_GlucosmHeader" />
 
     @RenderBody()
 
